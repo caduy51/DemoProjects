@@ -4,9 +4,9 @@ In this demo project, I used the available dataset for showcasing my relevant sk
 
 ## Tools and technology used
 
-Database: MySQL
+Database technology: MySQL
 
-Data visualization: Microsoft Power BI
+Visualization tools: Microsoft Power BI
 
 ### Using SQL for brief data analytics
 
@@ -14,11 +14,11 @@ Data visualization: Microsoft Power BI
 
     `SELECT * FROM customers;`
 
-2.  Display all the product information
+2.  How many product lines are sold by the company?
 
-    `SELECT * FROM products;`
+    `SELECT count(*) FROM products;`
 
-3.  Display total number of customers
+3.  How many customers are served by the company?
 
     `SELECT count(*) FROM customers;`
 
@@ -30,29 +30,21 @@ Data visualization: Microsoft Power BI
 
     `SELECT distinct product_code FROM transactions where market_code='Mark002';`
 
-6.  Display transactions where currency is US dollars
+6.  When was the first time that the company started selling products to customers? How long has it been?
 
-    `SELECT * FROM transactions WHERE currency="USD"`
+    `SELECT year(MIN(order_date)) AS Starting_year, year(MAX(order_date)) AS Year_now, round(datediff(MAX(order_date), MIN(order_date))/365, 1) AS Duration FROM transactions;`
 
 7.  Display the number of transactions in 2020
 
     `SELECT count(1) as number_of_transactions FROM transactions WHERE year(order_date) = 2020;`
 
-8.  Display transactions in 2020 join by date table
-
-    `SELECT transactions.*, date.* FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020;`
-
-9.  Calculate total revenue in year 2020
+8.  Calculate total revenue in year 2020
 
     `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.currency="INR\r" or transactions.currency="USD\r";`
 
-10. Display total revenue in year 2020, January Month
+9.  Calculate total revenue in year 2020, January
 
     `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and and date.month_name="January" and (transactions.currency="INR\r" or transactions.currency="USD\r");`
-
-11. Display total revenue in year 2020 in Chennai
-
-    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.market_code="Mark001";`
 
 # Data Analysis Using Power BI
 
