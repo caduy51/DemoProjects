@@ -8,7 +8,7 @@ Help the owner manage discipline, and save time in performance tracking.
 
 Offer a brief overview of key metrics in the trading market at first glance.
 
-![Performance of a trader in the year 2022](year%202022.PNG){alt="Performance of a trader in the year 2022" width="679"}
+![Performance of a trader in the year 2022](img/year%202022.PNG){alt="Performance of a trader in the year 2022" width="679"}
 
 ## Tools used for this project:
 
@@ -68,6 +68,6 @@ The first one is `Winrate by month`, illustrating stability of win rate over tim
 
 The second one is `Most currency traded over time`. It shows the most and the least popular a traded currency was, and each of which has the Win/Loss result inside. This information assists the trader in identifying the currency unsuitable for his strategy, thereby improving the overall trading performance.
 
-![Performance of a trader in the year 2022](year%202022.PNG){width="679"}
+![Performance of a trader in the year 2022](img/year%202022.PNG){width="679"}
 
 In summary, this day trader performs well in the market with the performance data shown here in 2022.
