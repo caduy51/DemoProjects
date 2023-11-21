@@ -20,7 +20,7 @@ Visualization tools: Microsoft Power BI
 
 2.  Data modeling
 
-![The figure shows how tables are related to each other](Data%20modeling.PNG){width="443"}
+![The figure shows how tables are related to each other](img/Data%20modeling.PNG){width="443"}
 
 The database schema has 5 entities: sales transactions, sales product, sales markets, sales date and sales customers.
 
@@ -30,7 +30,7 @@ The architecture of data modeling is star schema with sales transactions table s
 
 This dashboard gives the quick look at sales activity of the company.
 
-![Overview of selling activity](Sales%20Dashboard.PNG){width="493"}
+![Overview of selling activity](img/Sales%20Dashboard.PNG){width="493"}
 
 The stakeholder will grasp the general trend of the company revenue between 2018 and 2020. From here, they are going to evaluate and find the solution to improve the sales in the future.
 
