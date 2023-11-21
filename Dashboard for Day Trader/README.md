@@ -8,6 +8,8 @@ Help the owner manage discipline, and save time in performance tracking.
 
 Offer a brief overview of key metrics in the trading market at first glance.
 
+![Performance of a trader in the year 2022](year%202022.PNG){alt="Performance of a trader in the year 2022" width="679"}
+
 ## Tools used for this project:
 
 Power BI, Microsoft Excel
